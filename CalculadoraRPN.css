@@ -1,0 +1,81 @@
+/*Especificidad 001*/
+body{
+    background-color: antiquewhite;
+    color:black;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+/*Especificidad 001*/
+form *{
+    border:none;
+}
+/*Especificidad 001*/
+form{
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px ;
+    grid-gap:10px;
+    background-color: darkgrey;
+    color:black;
+    width: 300px;
+    height: 500px;
+    padding:30px;
+    margin :auto;
+    border-radius:20px;
+}
+/*Especificidad 001*/
+input{
+    background-color:rgb(204, 199, 199);
+    color:black;
+    border:black;
+}
+/*Especificidad 011*/
+input[type="text"]{
+    grid-column:1/6;
+    
+    background-color: rgb(233, 223, 223);
+    
+    padding:5px;
+    text-align:right;
+    color:black;
+    border:none;
+    font-size:20px;
+}
+/*Especificidad 001*/
+textarea{
+    resize:none;
+    grid-column: 1/5;
+    background-color: rgb(66, 65, 65);
+    padding:5px;
+    text-align: right;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    border:none;
+    height: 200px;
+}
+
+/**
+input[name="op"]{
+    background-color: brown;
+    color: black;
+}
+input[name="mem"]{
+    background-color: rgb(14, 13, 13);
+    color: rgb(252, 252, 252);
+}
+input[value="="]{
+    background-color: rgb(252, 252, 252);
+    color:  rgb(14, 13, 13);
+}
+**/
+
+/*Especificidad 001*/
+label{
+    display: none;
+    color:white;
+    background-color: rgb(66, 65, 65);
+}
+/*Especificidad 011*/
+input[type="submit"]{
+    display: none;
+}
